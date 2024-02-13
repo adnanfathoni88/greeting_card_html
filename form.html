@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+</body>
+<div class="section">
+    <div class="row animate__animated animate__shakeX" style="height: 100%; align-items: center;">
+        <div class="col-12">
+            <div class="content mx-4">
+                <h3>SO, select one hehe </h3>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <a href="./hadiah.html" class="btn-utama mx-2">Adnan</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="btn-utama" id="noBtn">Mark</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<!-- run button -->
+<script>
+    const noBtn = document.getElementById('noBtn');
+
+    x = 0;
+    y = 0;
+
+    noBtn.addEventListener('click', () => {
+
+        // random number 1 - 500
+        x = Math.floor(Math.random() * 700);
+        y = Math.floor(Math.random() * 200);
+
+        console.log(x, y);
+        // style
+        noBtn.style.position = 'absolute';
+        noBtn.style.top = x + 'px';
+        noBtn.style.left = y + 'px';
+
+    });
+</script>
+</body>
+
+</html>

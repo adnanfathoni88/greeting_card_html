@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</body>
+<div class="container">
+    <div class="content">
+        <form id="form">
+            <label for="nama">Nama </label>
+            <input type="text" name="nama" id="nama">
+            <button type="button" onclick="getName()">Simpan</button>
+        </form>
+        <p id="hasil"></p>
+    </div>
+    <a href="./salam.html">tes</a>
+    <!-- hasil -->
+</div>
+
+
+<script>
+    function getName() {
+        var nama = document.getElementById('nama').value;
+        console.log(nama);
+        document.getElementById("hasil").innerText = nama;
+    }
+</script>
+</body>
+
+</html>
